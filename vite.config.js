@@ -26,16 +26,16 @@ export default defineConfig(({ command }) => {
           emptyOutDir: false,
           minify: true,
           sourcemap: true,
-          target: ['es2015'],
+          // target: ['es2015'],
           outDir: path.resolve(__dirname, 'docs'),
           rollupOptions: {
             input: path.resolve(__dirname, './demo/index.html')
           }
         },
         plugins: [
-          ViteLegacy({
-            targets: ['defaults']
-          })
+          // ViteLegacy({
+          //   targets: ['defaults']
+          // })
         ]
       }
     } else if (type === 'es') {
