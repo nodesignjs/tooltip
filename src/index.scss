@@ -1,0 +1,54 @@
+$color: #fff !default;
+$bg: #1f2329 !default;
+$padding: 8px 12px !default;
+$radius: 8px !default;
+$arrowSize: 12px !default;
+$boxShadow: 0 !default;
+
+.cdt {
+  --cdt-color: #{$color};
+  --cdt-bg: #{$bg};
+  --cdt-padding: #{$padding};
+  --cdt-radius: #{$radius};
+  --cdt-arrow: #{$arrowSize};
+  --cdt-shadow: #{$boxShadow};
+
+  &_content {
+    padding: var(--cdt-padding);
+    border-radius: var(--cdt-radius);
+    color: var(--cdt-color);
+    background: var(--cdt-bg);
+    box-shadow: var(--cdt-shadow);
+    white-space: pre-wrap;
+  }
+
+  &_arrow {
+    width: var(--cdt-arrow);
+    height: var(--cdt-arrow);
+    transform: rotate(45deg);
+    transform-origin: center;
+    background: var(--cdt-bg);
+  }
+
+  &_ani {
+    &-enter-from, &-exit-to {
+      transform: scale(.7);
+      opacity: 0;
+    }
+    &-enter-active, &-exit-active {
+      transition: transform .2s cubic-bezier(.34,.69,.1,1), opacity .2s ease;
+    }
+    &-t, &-tl, &-tr {
+      transform-origin: bottom;
+    }
+    &-b, &-bl, &-br {
+      transform-origin: top;
+    }
+    &-l, &-lt, &-lb {
+      transform-origin: right;
+    }
+    &-r, &-rt, &-rb {
+      transform-origin: left;
+    }
+  }
+}
