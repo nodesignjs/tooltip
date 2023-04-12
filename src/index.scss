@@ -5,29 +5,29 @@ $radius: 8px !default;
 $arrowSize: 12px !default;
 $boxShadow: 0 !default;
 
-.cdt {
-  --cdt-color: #{$color};
-  --cdt-bg: #{$bg};
-  --cdt-padding: #{$padding};
-  --cdt-radius: #{$radius};
-  --cdt-arrow: #{$arrowSize};
-  --cdt-shadow: #{$boxShadow};
+.ndt {
+  --ndt-color: #{$color};
+  --ndt-bg: #{$bg};
+  --ndt-padding: #{$padding};
+  --ndt-radius: #{$radius};
+  --ndt-arrow: #{$arrowSize};
+  --ndt-shadow: #{$boxShadow};
 
   &_content {
-    padding: var(--cdt-padding);
-    border-radius: var(--cdt-radius);
-    color: var(--cdt-color);
-    background: var(--cdt-bg);
-    box-shadow: var(--cdt-shadow);
+    padding: var(--ndt-padding);
+    border-radius: var(--ndt-radius);
+    color: var(--ndt-color);
+    background: var(--ndt-bg);
+    box-shadow: var(--ndt-shadow);
     white-space: pre-wrap;
   }
 
   &_arrow {
-    width: var(--cdt-arrow);
-    height: var(--cdt-arrow);
+    width: var(--ndt-arrow);
+    height: var(--ndt-arrow);
     transform: rotate(45deg);
     transform-origin: center;
-    background: var(--cdt-bg);
+    background: var(--ndt-bg);
   }
 
   &_ani {

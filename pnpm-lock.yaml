@@ -1,9 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
-  '@cosmo-design/popper':
-    specifier: ^1.2.0
-    version: 1.2.0
+  '@nodesign/popper':
+    specifier: ^1.0.0
+    version: registry.npmjs.org/@nodesign/popper@1.0.0
   wblib:
     specifier: ^1.0.14
     version: 1.0.14
@@ -1218,12 +1218,6 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
     dev: true
-
-  /@cosmo-design/popper@1.2.0:
-    resolution: {integrity: sha512-UIsZjALQB9aFFB3OGtgLbgFcwKADEOoBGxwtd8vQUz6ZbnnHnvgK5MV81YFIThMeRx8VMhwxv0qLEC+loNKn5Q==}
-    dependencies:
-      wblib: 1.0.14
-    dev: false
 
   /@esbuild/linux-loong64@0.14.54:
     resolution: {integrity: sha512-bZBrLAIX1kpWelV0XemxBZllyRmM6vgFQQG2GdNb+r3Fkp0FOh1NJSvekXDs7jq70k4euu1cryLMfU+mTXlEpw==}
@@ -3576,3 +3570,11 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  registry.npmjs.org/@nodesign/popper@1.0.0:
+    resolution: {integrity: sha512-fM0u3MMxaX5owTTEHptfUPbciEgcwiVkigTWVG9vZdPi/7U71FcT1ieCXDraLcHxFNcXkJsKTO/lOntW6T2b7A==, registry: https://registry.npmmirror.com/, tarball: https://registry.npmjs.org/@nodesign/popper/-/popper-1.0.0.tgz}
+    name: '@nodesign/popper'
+    version: 1.0.0
+    dependencies:
+      wblib: 1.0.14
+    dev: false

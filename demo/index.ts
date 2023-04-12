@@ -15,7 +15,7 @@ window.onload = function () {
   requestAnimationFrame(() => {
     const config = {
       container,
-      content: 'npm i -S @cosmo-design/tooltip',
+      content: 'npm i -S @nodesign/tooltip',
       trigger: btn,
       autoPlacement: true,
       autoUpdate: false,
@@ -29,7 +29,7 @@ window.onload = function () {
       closeDelay: 50,
       emit: EmitType.HOVER,
       open: true,
-      cssName: 'cdt_ani',
+      cssName: 'ndt_ani',
     };
     const popup = new Tooltip(config as any);
 
@@ -44,7 +44,7 @@ window.onload = function () {
         if (value === 'arrow') {
           config.arrow = checked;
         } else if (value === 'css') {
-          config.cssName = checked ? 'cdt_ani' : '';
+          config.cssName = checked ? 'ndt_ani' : '';
         } else {
           config[value] = checked;
         }

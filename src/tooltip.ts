@@ -1,9 +1,9 @@
-import Popper, { EmitType, PopperConfig } from '@cosmo-design/popper';
+import Popper, { EmitType, PopperConfig } from '@nodesign/popper';
 import { $, addClass } from 'wblib';
 import { TooltipConfig } from './type';
 import './index.scss';
 
-const CLS_PREFIX = 'cdt';
+const CLS_PREFIX = 'ndt';
 const CLS_ARROW = `${CLS_PREFIX}_arrow`;
 const CLS_CONTENT = `${CLS_PREFIX}_content`;
 const CLS_ANI = `${CLS_PREFIX}_ani`;

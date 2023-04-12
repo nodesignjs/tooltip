@@ -1,27 +1,27 @@
-# [Tooltip](https://cosmo-design.github.io/tooltip/)
+# [Tooltip](https://nodesignjs.github.io/tooltip/)
 
-[![npm version](https://img.shields.io/npm/v/@cosmo-design/tooltip?logo=npm)](https://github.com/cosmo-design/tooltip) 
-[![npm version](https://img.shields.io/bundlephobia/minzip/@cosmo-design/tooltip)](https://github.com/cosmo-design/tooltip)
+[![npm version](https://img.shields.io/npm/v/@nodesign/tooltip?logo=npm)](https://github.com/nodesignjs/tooltip) 
+[![npm version](https://img.shields.io/bundlephobia/minzip/@nodesign/tooltip)](https://github.com/nodesignjs/tooltip)
 
-@cosmo-design/tooltip 是功能强大，配置灵活的 tooltip 纯 JS 库，基于 [@cosmo-design/popper](https://github.com/cosmo-design/popper).
+@nodesign/tooltip 是功能强大，配置灵活的 tooltip 纯 JS 库，基于 [@nodesign/popper](https://github.com/nodesignjs/popper).
 
-[在线体验](https://cosmo-design.github.io/tooltip/)
+[在线体验](https://nodesignjs.github.io/tooltip/)
 
-[![@cosmo-design/tooltip](./demo/p.png)](https://cosmo-design.github.io/tooltip/)
+[![@nodesign/tooltip](./demo/p.png)](https://nodesignjs.github.io/tooltip/)
 
 [English](./README_zh.md)
 
 ## 安装
 
 ```
-npm i -S @cosmo-design/tooltip
+npm i -S @nodesign/tooltip
 ```
 
 或者通过 CDN 使用
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@cosmo-design/tooltip@latest/dist/index.min.css">
-<script src="https://unpkg.com/@cosmo-design/tooltip@latest/dist/index.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@nodesign/tooltip@latest/dist/index.min.css">
+<script src="https://unpkg.com/@nodesign/tooltip@latest/dist/index.min.js"></script>
 <script>
   console.log(tooltip)
 </script>
@@ -30,10 +30,10 @@ npm i -S @cosmo-design/tooltip
 ## 快速开始
 
 ```js
-import Tooltip from '@cosmo-design/tooltip'
-import '@cosmo-design/tooltip/lib/index.css'
-// 或者 import '@cosmo-design/tooltip/lib/index.scss'
-// 或者 import '@cosmo-design/tooltip/dist/index.min.css'
+import Tooltip from '@nodesign/tooltip'
+import '@nodesign/tooltip/lib/index.css'
+// 或者 import '@nodesign/tooltip/lib/index.scss'
+// 或者 import '@nodesign/tooltip/dist/index.min.css'
 
 const container = document.querySelector('.container'); // 默认: document.body
 const trigger = document.querySelector('.trigger'); 
@@ -55,34 +55,34 @@ setTimeout(() => {
 tooltip.destroy()
 ```
 
-完整教程可以参考 [@cosmo-design/popper 文档](https://github.com/cosmo-design/popper/blob/main/README_zh.md)。
+完整教程可以参考 [@nodesign/popper 文档](https://github.com/nodesignjs/popper/blob/main/README_zh.md)。
 
 ### CSS 样式
 
-Tooltip 的类名和 CSS 变量以 `cdt` 为开头。
+Tooltip 的类名和 CSS 变量以 `ndt` 为开头。
 
 ```css
---cdt-color: #fff; // 字体颜色
---cdt-bg: #1f2329; // 背景色
---cdt-padding: 8px 12px; // padding
---cdt-radius: 8px; // radius
---cdt-arrow: 12px; // 箭头的宽高
---cdt-shadow: 0; // box shadow
+--ndt-color: #fff; // 字体颜色
+--ndt-bg: #1f2329; // 背景色
+--ndt-padding: 8px 12px; // padding
+--ndt-radius: 8px; // radius
+--ndt-arrow: 12px; // 箭头的宽高
+--ndt-shadow: 0; // box shadow
 ```
 
 你可以通过修改 CSS 变量来自定义样式。
 
 ```css
-html[data-theme='dark'] .cdt, html.dark .cdt {
-  --cdt-bg: #373739;
+html[data-theme='dark'] .ndt, html.dark .ndt {
+  --ndt-bg: #373739;
 }
 ```
 
 ### CSS 动画
 
-参考 [@cosmo-design/popper CSS 动画参数](https://github.com/cosmo-design/popper/blob/main/README_zh.md#css-%E5%8A%A8%E7%94%BB)。
+参考 [@nodesign/popper CSS 动画参数](https://github.com/nodesignjs/popper/blob/main/README_zh.md#css-%E5%8A%A8%E7%94%BB)。
 
-Tooltip 添加了默认 `cdt_ani` 为 CSS 动画名，你可以通过配置 `cssName` 参数自定义 CSS 动画。
+Tooltip 添加了默认 `ndt_ani` 为 CSS 动画名，你可以通过配置 `cssName` 参数自定义 CSS 动画。
 
 ```js
 const tooltip = new Tooltip({
@@ -104,7 +104,7 @@ const tooltip = new Tooltip({
 
 ### 箭头
 
-通过 `arrow` 参数可以配置自定义箭头元素。默认会添加一个类名为 `cdt_arrow` 的 `div` 作为箭头元素。
+通过 `arrow` 参数可以配置自定义箭头元素。默认会添加一个类名为 `ndt_arrow` 的 `div` 作为箭头元素。
 
 ```js
 const arrow = document.createElement('div')
@@ -119,7 +119,7 @@ const popper = new Tooltip({
 
 ## API
 
-完整 API 请参考 [@cosmo-design/popper API 文档](https://github.com/cosmo-design/popper/blob/main/README_zh.md)
+完整 API 请参考 [@nodesign/popper API 文档](https://github.com/nodesignjs/popper/blob/main/README_zh.md)
 
 ### 配置
 

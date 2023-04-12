@@ -46,7 +46,7 @@ export default defineConfig(({ command }) => {
           rollupOptions: {
             input: './src/index.ts',
             preserveEntrySignatures: 'strict',
-            external: ['wblib', '@cosmo-design/popper'],
+            external: ['wblib', '@nodesign/popper'],
             output: {
               manualChunks: undefined,
               format: 'es',

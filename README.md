@@ -1,27 +1,27 @@
-# [Tooltip](https://cosmo-design.github.io/tooltip/)
+# [Tooltip](https://nodesignjs.github.io/tooltip/)
 
-[![npm version](https://img.shields.io/npm/v/@cosmo-design/tooltip?logo=npm)](https://github.com/cosmo-design/tooltip) 
-[![npm version](https://img.shields.io/bundlephobia/minzip/@cosmo-design/tooltip)](https://github.com/cosmo-design/tooltip)
+[![npm version](https://img.shields.io/npm/v/@nodesign/tooltip?logo=npm)](https://github.com/nodesignjs/tooltip) 
+[![npm version](https://img.shields.io/bundlephobia/minzip/@nodesign/tooltip)](https://github.com/nodesignjs/tooltip)
 
-@cosmo-design/tooltip is a powerful and flexible tooltip pure JS library based on [@cosmo-design/popper](https://github.com/cosmo-design/popper).
+@nodesign/tooltip is a powerful and flexible tooltip pure JS library based on [@nodesign/popper](https://github.com/nodesignjs/popper).
 
-[Playground](https://cosmo-design.github.io/tooltip/)
+[Playground](https://nodesignjs.github.io/tooltip/)
 
-[![@cosmo-design/tooltip](./demo/p.png)](https://cosmo-design.github.io/tooltip/)
+[![@nodesign/tooltip](./demo/p.png)](https://nodesignjs.github.io/tooltip/)
 
 [中文文档](./README_zh.md)
 
 ## Install
 
 ```
-npm i -S @cosmo-design/tooltip
+npm i -S @nodesign/tooltip
 ```
 
 or via CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@cosmo-design/tooltip@latest/dist/index.min.css">
-<script src="https://unpkg.com/@cosmo-design/tooltip@latest/dist/index.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@nodesign/tooltip@latest/dist/index.min.css">
+<script src="https://unpkg.com/@nodesign/tooltip@latest/dist/index.min.js"></script>
 <script>
   console.log(tooltip)
 </script>
@@ -30,10 +30,10 @@ or via CDN
 ## Usage
 
 ```js
-import Tooltip from '@cosmo-design/tooltip'
-import '@cosmo-design/tooltip/lib/index.css'
-// or import '@cosmo-design/tooltip/lib/index.scss'
-// or import '@cosmo-design/tooltip/dist/index.min.css'
+import Tooltip from '@nodesign/tooltip'
+import '@nodesign/tooltip/lib/index.css'
+// or import '@nodesign/tooltip/lib/index.scss'
+// or import '@nodesign/tooltip/dist/index.min.css'
 
 const container = document.querySelector('.container'); // default: document.body
 const trigger = document.querySelector('.trigger'); 
@@ -55,34 +55,34 @@ setTimeout(() => {
 tooltip.destroy()
 ```
 
-You can refer to the documentation of [@cosmo-design/popper](https://github.com/cosmo-design/popper/blob/main/README.md) for a complete tutorial.
+You can refer to the documentation of [@nodesign/popper](https://github.com/nodesignjs/popper/blob/main/README.md) for a complete tutorial.
 
 ### CSS Style
 
-The class names and CSS variables of Tooltip begin with `cdt`.
+The class names and CSS variables of Tooltip begin with `ndt`.
 
 ```css
---cdt-color: #fff; // font color
---cdt-bg: #1f2329; // background color
---cdt-padding: 8px 12px; // padding
---cdt-radius: 8px; // radius
---cdt-arrow: 12px; // The width and height of the arrow element
---cdt-shadow: 0; // box shadow
+--ndt-color: #fff; // font color
+--ndt-bg: #1f2329; // background color
+--ndt-padding: 8px 12px; // padding
+--ndt-radius: 8px; // radius
+--ndt-arrow: 12px; // The width and height of the arrow element
+--ndt-shadow: 0; // box shadow
 ```
 
 You can customize the style by modifying CSS variables.
 
 ```css
-html[data-theme='dark'] .cdt, html.dark .cdt {
-  --cdt-bg: #373739;
+html[data-theme='dark'] .ndt, html.dark .ndt {
+  --ndt-bg: #373739;
 }
 ```
 
 ### CSS Animation
 
-Please refer to the [@cosmo-design/popper CSS animation parameters](https://github.com/cosmo-design/popper/tree/main#css-animation) for more information.
+Please refer to the [@nodesign/popper CSS animation parameters](https://github.com/nodesignjs/popper/tree/main#css-animation) for more information.
 
-Tooltip has added `cdt_ani` as the default CSS animation name, and you can customize the CSS animation by configuring the `cssName` parameter.
+Tooltip has added `ndt_ani` as the default CSS animation name, and you can customize the CSS animation by configuring the `cssName` parameter.
 
 ```js
 const tooltip = new Tooltip({
@@ -104,7 +104,7 @@ You can write the following CSS styles:
 
 ### Arrow
 
-You can configure a custom arrow element using the arrow parameter. By default, a `div` element with a class name of `cdt_arrow` will be added as the arrow element.
+You can configure a custom arrow element using the arrow parameter. By default, a `div` element with a class name of `ndt_arrow` will be added as the arrow element.
 
 ```js
 const arrow = document.createElement('div')
@@ -119,7 +119,7 @@ const popper = new Tooltip({
 
 ## API
 
-Please refer to the [@cosmo-design/popper API documentation](https://github.com/cosmo-design/popper/blob/main/README.md) for the complete API.
+Please refer to the [@nodesign/popper API documentation](https://github.com/nodesignjs/popper/blob/main/README.md) for the complete API.
 
 ### Config
 

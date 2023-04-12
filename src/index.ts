@@ -1,4 +1,4 @@
-export * from '@cosmo-design/popper';
+export * from '@nodesign/popper';
 export * from './type';
 export * from './tooltip';
 

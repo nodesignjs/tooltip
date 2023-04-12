@@ -1,5 +1,5 @@
 {
-  "name": "@cosmo-design/tooltip",
+  "name": "@nodesign/tooltip",
   "version": "1.0.0",
   "main": "dist/index.min.js",
   "module": "lib/index.js",
@@ -16,8 +16,8 @@
     }
   },
   "authors": "oyuyue <oyuyue@outlook.com>",
-  "repository": "git@github.com:cosmo-design/tooltip.git",
-  "homepage": "https://github.com/cosmo-design/tooltip",
+  "repository": "git@github.com:nodesignjs/tooltip.git",
+  "homepage": "https://github.com/nodesignjs/tooltip",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
@@ -60,7 +60,7 @@
     "vite": "3.0.3"
   },
   "dependencies": {
-    "@cosmo-design/popper": "^1.2.0",
+    "@nodesign/popper": "^1.0.0",
     "wblib": "^1.0.14"
   }
 }
