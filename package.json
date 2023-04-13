@@ -1,6 +1,6 @@
 {
   "name": "@nodesign/tooltip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.min.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,13 +8,6 @@
     "*.scss",
     "*.css"
   ],
-  "exports": {
-    ".": {
-      "types": "./lib/index.d.ts",
-      "import": "./lib/index.js",
-      "require": "./dist/index.min.js"
-    }
-  },
   "authors": "oyuyue <oyuyue@outlook.com>",
   "repository": "git@github.com:nodesignjs/tooltip.git",
   "homepage": "https://github.com/nodesignjs/tooltip",
@@ -60,7 +53,7 @@
     "vite": "3.0.3"
   },
   "dependencies": {
-    "@nodesign/popper": "^1.0.0",
+    "@nodesign/popper": "^1.0.1",
     "wblib": "^1.0.14"
   }
 }

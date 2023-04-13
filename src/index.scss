@@ -1,8 +1,8 @@
 $color: #fff !default;
 $bg: #1f2329 !default;
-$padding: 8px 12px !default;
-$radius: 8px !default;
-$arrowSize: 12px !default;
+$padding: 6px 10px !default;
+$radius: 6px !default;
+$arrowSize: 9px !default;
 $boxShadow: 0 !default;
 
 .ndt {
@@ -12,6 +12,9 @@ $boxShadow: 0 !default;
   --ndt-radius: #{$radius};
   --ndt-arrow: #{$arrowSize};
   --ndt-shadow: #{$boxShadow};
+
+  font-size: 12px;
+  line-height: 1.5em;
 
   &_content {
     padding: var(--ndt-padding);
@@ -36,19 +39,43 @@ $boxShadow: 0 !default;
       opacity: 0;
     }
     &-enter-active, &-exit-active {
-      transition: transform .2s cubic-bezier(.34,.69,.1,1), opacity .2s ease;
+      transition: transform .2s cubic-bezier(.34,.69,.1,1), opacity .2s cubic-bezier(.34,.69,.1,1);
     }
-    &-t, &-tl, &-tr {
+    &-t {
       transform-origin: bottom;
     }
-    &-b, &-bl, &-br {
+    &-tl {
+      transform-origin: bottom left;
+    }
+    &-tr {
+      transform-origin: bottom right;
+    }
+    &-b {
       transform-origin: top;
     }
-    &-l, &-lt, &-lb {
+    &-bl {
+      transform-origin: top left;
+    }
+    &-br {
+      transform-origin: top right;
+    }
+    &-l {
       transform-origin: right;
     }
-    &-r, &-rt, &-rb {
+    &-lt {
+      transform-origin: right top;
+    }
+    &-lb {
+      transform-origin: right bottom;
+    }
+    &-r {
       transform-origin: left;
+    }
+    &-rt {
+      transform-origin: left top;
+    }
+    &-rb {
+      transform-origin: left bottom;
     }
   }
 }

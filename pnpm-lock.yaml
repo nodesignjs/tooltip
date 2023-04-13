@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@nodesign/popper':
-    specifier: ^1.0.0
-    version: registry.npmjs.org/@nodesign/popper@1.0.0
+    specifier: ^1.0.1
+    version: 1.0.1
   wblib:
     specifier: ^1.0.14
     version: 1.0.14
@@ -1350,6 +1350,12 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
     dev: true
+
+  /@nodesign/popper@1.0.1:
+    resolution: {integrity: sha512-l9sw+69UowRZAucIEP174/9Khyw4bMWpQhnIOkYwh2yks6+x0SU/GdaEZ4B7e4ISRWnjWdpOlhhGsxLpwiu/SA==}
+    dependencies:
+      wblib: 1.0.14
+    dev: false
 
   /@rollup/plugin-babel@5.3.1(@babel/core@7.21.4)(rollup@2.79.1):
     resolution: {integrity: sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q==}
@@ -3570,11 +3576,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-  registry.npmjs.org/@nodesign/popper@1.0.0:
-    resolution: {integrity: sha512-fM0u3MMxaX5owTTEHptfUPbciEgcwiVkigTWVG9vZdPi/7U71FcT1ieCXDraLcHxFNcXkJsKTO/lOntW6T2b7A==, registry: https://registry.npmmirror.com/, tarball: https://registry.npmjs.org/@nodesign/popper/-/popper-1.0.0.tgz}
-    name: '@nodesign/popper'
-    version: 1.0.0
-    dependencies:
-      wblib: 1.0.14
-    dev: false
