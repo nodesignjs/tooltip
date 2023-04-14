@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@nodesign/popper':
-    specifier: ^1.0.1
-    version: 1.0.1
+    specifier: ^1.0.2
+    version: 1.0.2
   wblib:
     specifier: ^1.0.14
     version: 1.0.14
@@ -1351,8 +1351,8 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@nodesign/popper@1.0.1:
-    resolution: {integrity: sha512-l9sw+69UowRZAucIEP174/9Khyw4bMWpQhnIOkYwh2yks6+x0SU/GdaEZ4B7e4ISRWnjWdpOlhhGsxLpwiu/SA==}
+  /@nodesign/popper@1.0.2:
+    resolution: {integrity: sha512-t9yYcFrr6vC+QgFINfn7uQZzW4toBi1MvxGUBFwGts410tNAuZNcXlMpceD/me1gCLkK77u7anPXexc6Egduqg==}
     dependencies:
       wblib: 1.0.14
     dev: false

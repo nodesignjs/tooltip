@@ -22,7 +22,7 @@ function getConfig(c: TooltipConfig): PopperConfig {
   return {
     emit: EmitType.HOVER,
     autoScroll: false,
-    closeOnScroll: true,
+    closeOnScroll: false,
     autoUpdate: false,
     enterable: true,
     cssName: CLS_ANI,
