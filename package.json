@@ -1,6 +1,6 @@
 {
   "name": "@nodesign/tooltip",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "main": "dist/index.min.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -53,7 +53,7 @@
     "vite": "3.0.3"
   },
   "dependencies": {
-    "@nodesign/popper": "^1.0.2",
+    "@nodesign/popper": "1.1.0",
     "wblib": "^1.0.14"
   }
 }
