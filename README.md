@@ -31,8 +31,8 @@ or via CDN
 
 ```js
 import Tooltip from '@nodesign/tooltip'
-import '@nodesign/tooltip/lib/index.css'
-// or import '@nodesign/tooltip/lib/index.scss'
+import '@nodesign/tooltip/es/index.css'
+// or import '@nodesign/tooltip/es/index.scss'
 // or import '@nodesign/tooltip/dist/index.min.css'
 
 const container = document.querySelector('.container'); // default: document.body

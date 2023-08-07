@@ -31,8 +31,8 @@ npm i -S @nodesign/tooltip
 
 ```js
 import Tooltip from '@nodesign/tooltip'
-import '@nodesign/tooltip/lib/index.css'
-// 或者 import '@nodesign/tooltip/lib/index.scss'
+import '@nodesign/tooltip/es/index.css'
+// 或者 import '@nodesign/tooltip/es/index.scss'
 // 或者 import '@nodesign/tooltip/dist/index.min.css'
 
 const container = document.querySelector('.container'); // 默认: document.body

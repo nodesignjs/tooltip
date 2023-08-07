@@ -1,9 +1,20 @@
 {
   "name": "@nodesign/tooltip",
-  "version": "1.1.1",
+  "version": "1.1.2",
+  "type": "module",
   "main": "dist/index.min.js",
-  "module": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./es/index.js",
+      "require": "./dist/index.min.js",
+      "types": "./es/index.d.ts"
+    },
+    "./dist/*": "./dist/*",
+    "./es/*": "./es/*",
+    "./package.json": "./package.json"
+  },
   "sideEffects": [
     "*.scss",
     "*.css"
@@ -17,7 +28,7 @@
   },
   "files": [
     "dist",
-    "lib"
+    "es"
   ],
   "keywords": [
     "popup",
@@ -29,31 +40,31 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite demo",
-    "build": "vite build && BUILD_TYPE=es vite build && tsc && cp ./src/index.scss ./lib/index.scss",
+    "build": "vite build && BUILD_TYPE=es vite build && tsc && cp ./src/index.scss ./es/index.scss",
     "build:demo": "BUILD_TYPE=demo vite build",
     "release": "node ./scripts/release.js",
     "lint": "eslint src/**/*.ts --fix"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.9",
+    "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.18.9",
-    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-babel": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
     "@vitejs/plugin-legacy": "^2.0.0",
-    "enquirer": "^2.3.6",
+    "enquirer": "^2.4.1",
     "eslint": "^8.20.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "execa": "^5.1.0",
+    "execa": "^7.2.0",
     "sass": "^1.60.0",
-    "semver": "^7.3.7",
+    "semver": "^7.5.4",
     "terser": "^5.14.2",
     "typescript": "^4.7.4",
     "vite": "3.0.3"
   },
   "dependencies": {
-    "@nodesign/popper": "1.1.1",
-    "wblib": "^1.0.14"
+    "@nodesign/popper": "1.1.2",
+    "wblib": "^1.0.15"
   }
 }
